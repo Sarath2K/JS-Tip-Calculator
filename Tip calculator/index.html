@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="main.js"></script>
+    <style>
+        .font
+		{
+			font-size: 20px;
+		}
+    </style>
+</head>
+<body class="container pt-4">
+        <h3 class="text-center pt-4">
+            TIP & TOTAL Calculator
+        </h3>
+        <div class="row pt-4 font">
+            <div class="col-md-6">
+                <label>Bill Amount</label>
+            </div>
+            <div class="col-md-6">
+                <input type="text" id="txt1" placeholder="Enter Amount">
+            </div>
+        </div>
+        <div class="row pt-4 font">
+            <div class="col-md-6">
+                <label>No. of Members Sharing The Bill Amount</label>
+            </div>
+            <div class="col-md-6">
+                <input type="text" id="txt2" placeholder="Enter No of Members">
+            </div>
+        </div>
+        <div class="row pt-4 font">
+            <div class="col-md-4">
+                <label>Rate Our Service</label>
+            </div>		
+            <div class="col-md-8">
+                <marquee>
+                    Out Standing - 10% ,. Good - 8% ,. It's ok - 6% ,. Not Bad - 4% ,. Terrible - 2%. 
+                </marquee>
+                <div class="row">
+                    <div class="col-md-2 pt-1">
+                        <button  class="btn btn-primary"  onclick="outstanding()">Out Standing</button>
+            
+                    </div>
+                    <div class="col-md-2 pt-1">
+                        <button  class="btn btn-primary"  onclick="good()">Good</button>
+                    </div>
+                    <div class="col-md-2 pt-1">
+                        <button  class="btn btn-primary"  onclick="itsOk()">Its's Ok</button>
+                    </div>
+                    <div class="col-md-2 pt-1">
+                        <button  class="btn btn-primary"  onclick="notbad()">Not Bad</button>
+                    </div>
+                    <div class="col-md-2 pt-1">
+                        <button  class="btn btn-primary"  onclick="terrible()">Terrible</button>
+                    </div>
+                    <div class="col-md-2 pt-1">
+                        <button  class="btn btn-secondary"  onclick="self()">Self-Service</button>
+                    </div>
+                </div>			
+            </div>
+        </div>	
+        <div class="row pt-4 font">
+            <div class="col-md-6">
+                Tip Amount Per Head
+            </div>
+            <div class="col-md-6">
+                <div id="tip"></div>	
+            </div>
+        </div> 
+        <div class="row pt-4 font">
+            <div class="col-md-6">
+                Total Amount Per Head
+            </div>
+            <div class="col-md-6">
+                <div id="total"></div>	
+            </div>
+        </div> 		
+        <div class="row pt-4 font">
+            <div class="col-md-6">
+                Total Amount 
+            </div>
+            <div class="col-md-6">
+                <div id="amount"></div>	
+            </div>
+        </div> 		
+    
+    
+</body>
+</html>
